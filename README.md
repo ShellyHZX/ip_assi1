@@ -34,11 +34,16 @@ This app helps users organise and review learning materials efficiently using fl
 
 ## How to Run
 
+```
+git clone https://github.com/ShellyHZX/ip_assi1
+cd flashcard-app
+```
+
 ### 1. Database setup
 
 First, log into MySQL:
 ```bash 
-mysql -u root
+mysql -u root -p
 ```
 
 Then run these SQL commands:
@@ -48,7 +53,7 @@ CREATE USER 'flashuser'@'localhost' IDENTIFIED BY 'flashpass';
 GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
-
+The database `flashcard_app` will be automatically created when running the backend.
 Enter ```exit``` to leave MySQL
 
 ### 2. Backend setup

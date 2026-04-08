@@ -6,7 +6,7 @@ This is a single-page web application (SPA) that allows users to create and mana
 
 ## Problem Solved
 
-This app helps users organise and review learning materials efficiently using flashcards.
+This app helps students efficiently organise and review study materials using interactive flashcards.
 
 ## Tech Stack
 
@@ -41,7 +41,19 @@ cd ip_assi1
 
 ### 1. Database setup
 
-First, log into MySQL:
+Login to MySQL as root:
+
+```mysql -u root -p```
+
+Create a user:
+
+```
+CREATE USER 'flashuser'@'localhost' IDENTIFIED BY 'flashpass';
+GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+First, log in to MySQL:
 ```bash 
 mysql -u flashuser -p
 ```

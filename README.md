@@ -78,7 +78,7 @@ npm run dev
 
 http://localhost:5173
 
-# Enjoy
+### then, enjoy!
 
 ## Notes
 

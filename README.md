@@ -84,6 +84,8 @@ http://localhost:5173
 
 * Backend runs on port 8002
 * If port changes, update fetch URLs in frontend
+* Uvicorn running on: http://127.0.0.1:8002
+* You can verify the API at: http://127.0.0.1:8002/docs
 
 ## Challenges
 

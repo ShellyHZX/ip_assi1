@@ -7,41 +7,28 @@ This is a single-page web application (SPA) that allows users to create and mana
 ## Problem Solved
 
 This app helps users organise and review learning materials efficiently using flashcards.
+This app helps students efficiently organise and review study materials using interactive flashcards.
 
 ## Tech Stack
 
-* Frontend: React (Vite)
-* Backend: FastAPI
-* Database: MySQL
-* Styling: CSS
-
-## Features
-
-* Add flashcards (Create)
-* View flashcards (Read)
-* Edit flashcards (Update)
-* Delete flashcards (Delete)
-* Flip animation for cards
-* Carousel UI navigation
-* Theme switching
-
-## Folder Structure
-
-* `/backend` → FastAPI backend & database logic
-* `/src` → React frontend components
-* `main.py` → API routes
-* `models.py` → database schema
-
-## How to Run
-
-```
-git clone https://github.com/ShellyHZX/ip_assi1
-cd ip_assi1
-```
+@@ -41,52 +41,64 @@
 
 ### 1. Database setup
 
 First, log into MySQL:
+Login to MySQL as root:
+
+```mysql -u root -p```
+
+Create a user:
+
+```
+CREATE USER 'flashuser'@'localhost' IDENTIFIED BY 'flashpass';
+GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+First, log in to MySQL:
 ```bash 
 mysql -u flashuser -p
 ```
@@ -78,13 +65,14 @@ npm run dev
 
 http://localhost:5173
 
-# Enjoy
 ### then, enjoy!
 
 ## Notes
 
 * Backend runs on port 8002
 * If port changes, update fetch URLs in frontend
+* Uvicorn running on: http://127.0.0.1:8002
+* You can verify the API at: http://127.0.0.1:8002/docs
 
 ## Challenges
 

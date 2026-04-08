@@ -49,6 +49,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+Install backend dependencies
 ```bash
 cd backend
 pip install -r requirements.txt

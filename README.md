@@ -65,7 +65,10 @@ API can be checked in: ```http://127.0.0.1:8002/docs```
 
 ### 3. Frontend setup
 
-Open a new terminal, then use this cmd:
+Open a new terminal, go to the project folder
+```cd ip_assi1```
+
+then use this cmd:
 ```bash
 npm install
 npm run dev
@@ -74,6 +77,8 @@ npm run dev
 ### 4. Open in browser
 
 http://localhost:5173
+
+# Enjoy
 
 ## Notes
 

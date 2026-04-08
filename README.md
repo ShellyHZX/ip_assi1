@@ -36,6 +36,19 @@ This app helps users organise and review learning materials efficiently using fl
 
 ### 1. Backend setup
 
+First, log into MySQL:
+```bash 
+mysql -u root -p
+```
+
+Then run these SQL commands:
+
+```
+CREATE USER 'flashuser'@'localhost' IDENTIFIED BY 'flashpass';
+GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
+FLUSH PRIVILEGES;
+```
+
 ```bash
 cd backend
 pip install -r requirements.txt

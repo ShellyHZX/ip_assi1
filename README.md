@@ -49,6 +49,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+Enter ```exit``` to leave MySQL
+
 ### 2. Backend setup
 
 Install backend dependencies

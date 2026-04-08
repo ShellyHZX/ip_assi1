@@ -34,6 +34,15 @@ This app helps students efficiently organise and review study materials using in
 
 ## How to Run
 
+## Quick Start
+
+1. Setup database
+2. Run backend server (FastAPI)
+3. Run frontend (React)
+4. Open browser at http://localhost:5173
+---
+
+To get my project:
 ```
 git clone https://github.com/ShellyHZX/ip_assi1
 cd ip_assi1

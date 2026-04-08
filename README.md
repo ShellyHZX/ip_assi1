@@ -110,4 +110,8 @@ http://localhost:5173
 
 ## Challenges
 
-One challenge was connecting the frontend and backend APIs and ensuring CRUD operations worked smoothly. Another challenge was managing UI interactions such as card flipping and carousel movement.
+One of the main challenges was integrating the frontend and backend smoothly, especially handling asynchronous API calls and ensuring data consistency across CRUD operations.
+
+Another challenge was designing an intuitive user interface, particularly implementing the card flip animation and carousel navigation without breaking the user experience.
+
+Additionally, managing state updates in React while keeping the UI responsive required careful component design and testing.

@@ -43,16 +43,10 @@ cd ip_assi1
 
 First, log into MySQL:
 ```bash 
-mysql -u root -p
+mysql -u flashuser -p
 ```
+password: flashpass
 
-Then run these SQL commands:
-
-```
-CREATE USER 'flashuser'@'localhost' IDENTIFIED BY 'flashpass';
-GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
-FLUSH PRIVILEGES;
-```
 The database `flashcard_app` will be automatically created when running the backend.
 
 Enter ```exit``` to leave MySQL

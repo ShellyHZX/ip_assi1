@@ -36,7 +36,7 @@ This app helps users organise and review learning materials efficiently using fl
 
 ```
 git clone https://github.com/ShellyHZX/ip_assi1
-cd flashcard-app
+cd ip_assi1
 ```
 
 ### 1. Database setup

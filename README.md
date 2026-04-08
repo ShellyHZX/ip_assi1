@@ -34,7 +34,7 @@ This app helps users organise and review learning materials efficiently using fl
 
 ## How to Run
 
-### 1. Backend setup
+### 1. Database setup
 
 First, log into MySQL:
 ```bash 
@@ -49,24 +49,15 @@ GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+### 2. Backend setup
+
 Install backend dependencies
 ```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8002
 ```
-
-### 2. Database setup
-
-Make sure MySQL is running.
-
-Default config:
-
-* user: root
-* password: 123456
-* database: flashcard_app
-
-The app will automatically create the database if it does not exist.
+You need: fastapi, uvicorn, sqlmodel, pymysql
 
 ### 3. Frontend setup
 

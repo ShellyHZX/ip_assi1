@@ -38,7 +38,7 @@ This app helps users organise and review learning materials efficiently using fl
 
 First, log into MySQL:
 ```bash 
-mysql -u root -p
+mysql -u root
 ```
 
 Then run these SQL commands:

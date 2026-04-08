@@ -54,6 +54,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'flashuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
 The database `flashcard_app` will be automatically created when running the backend.
+
 Enter ```exit``` to leave MySQL
 
 ### 2. Backend setup
@@ -66,8 +67,11 @@ uvicorn main:app --reload --port 8002
 ```
 You need: fastapi, uvicorn, sqlmodel, pymysql
 
+API can be checked in: ```http://127.0.0.1:8002/docs```
+
 ### 3. Frontend setup
 
+Open a new terminal, then use this cmd:
 ```bash
 npm install
 npm run dev

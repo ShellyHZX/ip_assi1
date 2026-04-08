@@ -2,9 +2,8 @@ import os
 import pymysql
 from sqlmodel import SQLModel, create_engine, Session
 
-# MySQL settings from environment or defaults
-DB_USER = os.getenv("DB_USER", "root")
-DB_PASS = os.getenv("DB_PASS", "123456")
+DB_USER = os.getenv("DB_USER", "flashuser")
+DB_PASS = os.getenv("DB_PASS", "flashpass")
 DB_HOST = os.getenv("DB_HOST", "127.0.0.1")
 DB_PORT = os.getenv("DB_PORT", "3306")
 DB_NAME = os.getenv("DB_NAME", "flashcard_app")
